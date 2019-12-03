@@ -32,7 +32,6 @@ fn main(){
 
     }
 
-    process::exit(1);
 }
 
 fn get_input() -> String {
