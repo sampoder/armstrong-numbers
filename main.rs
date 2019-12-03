@@ -9,13 +9,31 @@ fn main(){
   let mut n = get_input().trim().parse::<i64>().unwrap();
   
   let temp = n;
+
+  let mut x = n;
+
+  let mut b = 0;
   
+  while x > 0 { 
+
+    x/=10; 
+
+    b+=1;
+    
+    }
+
 
   while n > 0 { 
 
     r=n%10; 
 
-    sum=sum+(r*r*r);  
+    let mut bb = b;
+
+    let mut rt = r;
+
+    while bb > 1 {rt*=r;bb-=1;}
+
+    sum=sum+(rt);  
 
     n=n/10; 
     
@@ -32,6 +50,7 @@ fn main(){
 
     }
 
+   
 }
 
 fn get_input() -> String {
