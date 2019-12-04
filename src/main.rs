@@ -4,7 +4,7 @@
 
 fn main(){
 
-    // print!("Enter a number:",);
+    println!("Enter a number:",);
    
     let mut r;
   
